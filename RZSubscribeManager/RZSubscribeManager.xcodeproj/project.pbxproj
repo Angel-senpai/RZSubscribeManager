@@ -26,6 +26,7 @@
 		69FDBA5F253481FC00C57505 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		69FDBA61253481FC00C57505 /* ReceiptItemExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptItemExtention.swift; sourceTree = "<group>"; };
 		69FDBA62253481FC00C57505 /* SubDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubDelegateProtocol.swift; sourceTree = "<group>"; };
+		69FDBA72253489D300C57505 /* RZSubscribeManager.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = RZSubscribeManager.xcworkspace; sourceTree = "<group>"; };
 		803D682CA09E43705DCE6273 /* Pods-RZSubscribeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZSubscribeManager.release.xcconfig"; path = "Target Support Files/Pods-RZSubscribeManager/Pods-RZSubscribeManager.release.xcconfig"; sourceTree = "<group>"; };
 		8B0FB48296BD2C5E0F8613CA /* Pods-RZSubscribeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZSubscribeManager.debug.xcconfig"; path = "Target Support Files/Pods-RZSubscribeManager/Pods-RZSubscribeManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +94,7 @@
 		A0F097262638112236DBAB6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69FDBA72253489D300C57505 /* RZSubscribeManager.xcworkspace */,
 				30730105A3EA395F2C7B7015 /* Pods_RZSubscribeManager.framework */,
 			);
 			name = Frameworks;
@@ -274,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -332,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
