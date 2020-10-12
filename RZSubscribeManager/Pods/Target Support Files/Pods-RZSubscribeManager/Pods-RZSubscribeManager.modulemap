@@ -1,0 +1,6 @@
+framework module Pods_RZSubscribeManager {
+  umbrella header "Pods-RZSubscribeManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
