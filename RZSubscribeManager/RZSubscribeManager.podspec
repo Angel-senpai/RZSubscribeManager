@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "RZSubscribeManager"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "Small test to test code sharing via cocoapods."
   spec.description  = "Small example to test code sharing via cocoapods."
   spec.homepage     = "https://github.com/Angel-senpai/RZSubscribeManager.git"
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 
 
 
-  spec.source       = { :git => "https://github.com/Angel-senpai/RZSubscribeManager.git", :tag => "1.1.0" }
+  spec.source       = { :git => "https://github.com/Angel-senpai/RZSubscribeManager.git", :tag => "1.1.1" }
 
 
   spec.source_files  = "RZSubscribeManager/RZSubscribeManager/**/*"
