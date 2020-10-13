@@ -240,7 +240,9 @@ public struct Product: Equatable{
                 skProducts = result.retrievedProducts
             }
             if result.retrievedProducts.count < allKeys.count{
-                getProducInfo()
+                DispatchQueue.main.async {
+                    getProducInfo()
+                }
                 return
             }
         }
