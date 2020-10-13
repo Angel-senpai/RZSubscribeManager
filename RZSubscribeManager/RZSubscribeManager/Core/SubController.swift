@@ -9,11 +9,6 @@
 import UIKit
 import StoreKit
 import SwiftyStoreKit
-import AppsFlyerLib
-import Alamofire
-import AdSupport
-import FBSDKCoreKit
-import Adjust
 
 //MARK: - SubController
 /// `RU: - `
