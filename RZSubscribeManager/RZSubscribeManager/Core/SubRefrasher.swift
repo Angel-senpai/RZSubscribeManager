@@ -26,10 +26,8 @@ class SubRefrasher{
         SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
             if case .success(let receipt) = result {
                 let res = getActiveReceiptItem(receipt)
-                SubController.activeReceipt = res
+                SubController.activeReceipts = res
             }
-            
-            SubController.activeReceipt = SubController.activeReceipt
         
             SubController.delegate?.upadate()
             if let btID = refrashBackgroundTaskId{
@@ -38,13 +36,14 @@ class SubRefrasher{
         }
     }
     
-    private static func getActiveReceiptItem(_ receipt: ReceiptInfo) -> ReceiptItem?{
+    private static func getActiveReceiptItem(_ receipt: ReceiptInfo) -> [ReceiptItem]{
+        var activeReceipts = [ReceiptItem]()
         for (_, product) in Product.allProduct{
-            if let receipt = product.isSubscibe ? verifySubscription(product, receipt) : verifyPurchase(product, receipt){
-                return receipt
+            if let receipt = product.productType == .subscription ? verifySubscription(product, receipt) : verifyPurchase(product, receipt){
+                activeReceipts.append(receipt)
             }
         }
-        return nil
+        return activeReceipts
     }
     
     private static func verifySubscription(_ product: Product, _ receipt: ReceiptInfo) -> ReceiptItem? {

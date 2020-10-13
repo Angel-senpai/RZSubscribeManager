@@ -9,9 +9,8 @@
 import StoreKit
 
 
-protocol SubDelegateProtocol: class{
+public protocol SubDelegateProtocol: class{
     func upadate()
-    func changeSubscibe(status: Bool)
     
     func subscibeSucces(product: Product, customData: Any?)
     func subscibeFaild(product: Product, customData: Any?)
